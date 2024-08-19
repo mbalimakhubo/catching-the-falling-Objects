@@ -11,5 +11,5 @@ A simple "Catch the Falling Objects" game built with HTML, CSS, and JavaScript. 
 ##Contact
 If you have any questions or suggestions, feel free to contact me:
 
-Email: mbali.makhubo25@gmail.com(mailto:mbali.makhubo25@gmail.com)
-GitHub: mbalimakhubo(https://github.com/mbalimakhubo)
+Email: [mbali.makhubo25@gmail.com](mailto:mbali.makhubo25@gmail.com)
+GitHub: [mbalimakhubo](https://github.com/mbalimakhubo)
