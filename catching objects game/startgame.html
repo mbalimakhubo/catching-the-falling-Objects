@@ -3,17 +3,26 @@
  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Catching Falling Objects</title>
  </head>
  <body>
      <!--Start Page-->
  <div id="startPage" style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100vh; background-color: #f3f3f3;">
-    <h1>Catch the Falling Objects</h1>
+    <h1>Welcome to the Catch Game</h1>
    <a href="index.html"><button id="startButton">Start Game</button></a> 
+   <div id="falling-balls-container"></div>
 </div>
 
 <div id="gameContainer" style="display: none;">
+
+   <div id="game">
+         <div id="basket">
+         <div id="object"></div>
+      </div>
+   </div>
   
 </div>
+<script src="script.js"></script>
  </body>
  </html>

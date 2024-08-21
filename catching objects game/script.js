@@ -1,3 +1,12 @@
+//elements for start page
+
+const startScreen = document.getElementById('start-screen');
+const startButton = document.getElementById('start-button');
+const gameArea = document.getElementById('game');
+const basket = document.getElementById('basket');
+const object = document.getElementById('object');
+const fallingBallsContainer = document.getElementById('falling-balls-container');
+
 let score = 0;
 const gameContainer = document.getElementById('game-container');
 const catcher = document.getElementById('catcher');
@@ -7,6 +16,18 @@ const scoreDisplay = document.getElementById('score');
 let catcherPosition = gameContainer.offsetWidth / 2 - catcher.offsetWidth / 2;
 let fallingObjectPosition = { x: Math.random() * (gameContainer.offsetWidth - fallingObject.offsetWidth), y: 0 };
 let fallingSpeed = 2;
+
+//Function to create falling balls
+
+function createFallingBalls(){
+    for (let i = 0; i ,10; i++){
+        const ball = document.createElement('div');
+        ball.classList.add('ball');
+        ball.style.left = Math.random() * 100 + visualViewport;
+        ball.style.animationDuration = Math.random() * 3 + 3 + 's'; //Random speed
+        fallingBallsContainer.appendChiild(ball);
+    }
+}
 
 // Function to move the catcher left and right
 function moveCatcher(event) {
@@ -77,7 +98,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 function startGame() {
-    // Initialize your game logic here
+    // Initialize  game logic here
     console.log("Game Started!");
     // For example: start falling objects, reset scores, etc.
 }
