@@ -56,3 +56,28 @@ function gameLoop() {
 // Start the game
 document.addEventListener('keydown', moveCatcher);
 gameLoop();
+
+
+// Wait for the document to load
+document.addEventListener("DOMContentLoaded", function() {
+    const startButton = document.getElementById("startButton");
+    const startPage = document.getElementById("startPage");
+    const gameContainer = document.getElementById("gameContainer");
+
+    startButton.addEventListener("click", function() {
+        // Hide the start page
+        startPage.style.display = "none";
+
+        // Show the game container
+        gameContainer.style.display = "block";
+
+        // Call a function to start the game
+        startGame();
+    });
+});
+
+function startGame() {
+    // Initialize your game logic here
+    console.log("Game Started!");
+    // For example: start falling objects, reset scores, etc.
+}
